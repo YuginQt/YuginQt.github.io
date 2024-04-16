@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/TechDoc.css">
+    <meta charset="UTF-8">
+    <title>Technical Documentation</title>
+  </head>
+  <body data-new-gr-c-s-check-loaded="8.907.0" data-gr-ext-installed="">
+    <nav id="navbar">
+      <header>Web Application Development</header>
+      <ul>
+        <li><a class="nav-link" href="#Overview of Web Technologies">Overview of Web Technologies</a></li>
+        <li><a class="nav-link" href="#GIT">GIT</a></li>
+        <li><a class="nav-link" href="#Linux">Linux</a></li>
+        <li><a class="nav-link" href="#CSS_(Cascading_Style_Sheets)">CSS (Cascading Style Sheets)</a></li>
+        <li><a class="nav-link" href="#Flexbox">Flexbox CSS</a></li>
+        <li><a class="nav-link" href="#VSCode Hax">VSCode Hax</a></li>
+
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Overview of Web Technologies">
+        <header>Overview of Web Technologies</header>
+        <article>
+          <p>
+            Birth of the World Wide Web (WWW) by Tim Berners-Lee in 1989
+          </p>
+
+          <p>
+            The birth of the Internet can be traced back to the late 1960s and early 1970s with 
+            the development of ARPANET (Advanced Research Projects Agency Network),
+             a pioneering network that laid the groundwork for the interconnected global network we know today
+          </p>
+
+          <ol>
+            <li>Key Internet Protocols</li>
+                <p> - HTTP is the foundation of web data communication, while HTTPS ensures secure data transfer using SSL/TLS encryption. 
+                    TCP/IP is a fundamental suite of internet communication protocols.</p>
+            <li>Client-Server Architecture</li>
+                <p> - This text outlines the roles of clients and servers in a request-response cycle, 
+                    highlighting the statelessness of each request and the absence of client state retention between requests.</p>
+            <li>Internet Technologies</li>
+                <p> - HTML is a standard markup language for creating web pages, defining structure and layout using tags. CSS enhances visual presentation of HTML elements. 
+                    JavaScript is a programming language that enables dynamic content on web pages, improving interactivity and user experience.</p>
+            <li>Responsive Web Design</li>
+                <p> - This text emphasizes the importance of CSS in ensuring web applications work well on various devices and screen sizes, improving user experience across desktops, tablets, and mobile devices. It also discusses media queries, 
+                    CSS techniques for applying styles based on device characteristics, and flexible and responsive web layout models.</p>
+          </ol>
+
+        </article>
+      </section>
+      <section class="main-section" id="GIT">
+        <header>GIT</header>
+        <article>
+          <p>GIT Commands</p>
+          <ul>
+            <li>git clone</li>
+                <p> - This command is used to clone your repository to your computer.</p>
+                <code>git clone https://github.com/your username/repository name</code>
+            <li>git status</li>
+                <p>- It will display the new files as untracked files</p>
+            <li>git add .</li>
+                <p>- It is used to stage all modified and untracked files in your current 
+                  directory and its subdirectories for inclusion in the next commit.</p>
+            <li>git commit -m</li>
+                <p> To Commit the second set of changes: </p>
+                <code>git commit -m "your message"</code>
+            <li>git push</li>
+                <p>Push the changes to the remote branch</p>
+            <li>Amend</li>
+                <p>You can rename your current commit message using the `--amend` flag and write the new message</p>
+                <code>$ git commit --amend -m "Love"
+
+                  [master 7b7f891] Love
+                  Date: Mon Jan 22 17:57:58 2024 +0500
+                  4 files changed, 2 insertions(+), 1 deletion(-)</code>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Linux">
+        <header>Linux</header>
+        <article>
+          <p><h3>Commands:</h3></p>
+         <ul>
+          <li>wsl --install</li>
+          <p>- installs Linux on you computer</p>
+          <li>wsl</li>
+          <p>- opens Linux in your terminal</p>
+          <li>logout or exit</li>
+          <p>- returns to command prompt in windows</p>
+          <li>clear</li>
+          <p>- clears the terminal screen</p>
+         </ul>
+         <p><h3>Apache  Commands</h3></p>
+         <ul>
+          <li>sudo apt update</li>
+          <p>- updates Linux before installation of Apache</p>
+          <li>sudo apt upgrade</li>
+          <p>- upgrades Linux</p>
+          <li>sudo apt-get install apache2</li>
+          <p>- installs Apache server</p>
+          <li>sudo service apache2 start</li>
+          <p>- starts Apache Server</p>
+          <li>sudo service apache2 stop</li>
+          <p>- stops Apache Server</p>
+         </ul>
+         <p><h3>Apache Setup</h3></p>
+         <ul>
+          <li>sudo nano</li>
+          <p>- open text editor</p>
+          <li>sudo chown -R username path/to/working/directory</li>
+          <p>- make folder writable</p>
+         </ul>
+         <p><h3>Folder Locations</h3></p>
+         <ul>
+          <li>/etc/apache2</li>
+          <p>- Apache Folder</p>
+          <li>/var/www/</li>
+          <p>- Document Root </p>
+         </ul>
+        </article>
+      </section>
+      <section class="main-section" id="CSS_(Cascading_Style_Sheets)">
+        <header>CSS (Cascading Style Sheets)</header>
+        <article>
+            <p>
+            CSS complements HTML by providing a means to control the visual presentation of web pages. 
+            While HTML defines the structure and content, CSS defines how that content should be displayed. 
+            With CSS, you can change colors, fonts, spacing, layouts, and more.
+            </p>
+
+            <p>
+            CSS rules consist of selectors and declarations. 
+            Selectors target HTML elements, and declarations specify how those elements should be styled. 
+            For example, to change the text color of all &lt;h1&gt elements to blue, you can use the following CSS rule:
+            </p>
+          <code>//This turns the text color of a page into blue.
+            h1 {
+            color: blue;
+          }
+          </code>
+          <p>CSS allows you to create beautiful and responsive web designs, 
+            ensuring your content looks great on different devices and screen sizes.</p>
+        </article>
+      </section>
+      <section class="main-section" id="Flexbox">
+        <header>Flexbox CSS</header>
+        <p><h3>Background</h3></p>
+        <p>
+          The Flexbox Layout module, currently a W3C Candidate Recommendation, provides a flexible way to arrange items within a container,
+          allowing them to adjust their width, height, and order to efficiently utilize available space across different devices and screen sizes. Unlike traditional block and inline layouts, which are limited by their vertical or horizontal orientation, flexbox is direction-agnostic, making it ideal for small-scale layouts and components within applications. 
+          While the Flexbox layout excels in managing smaller-scale elements, the Grid layout is better suited for larger-scale layouts.
+        </p>
+
+        <p><h3>Flexbox Properties for Parent</h3></p>
+        <ul>
+          <li>display</li>
+          <code>.container {
+            display: flex; /* or inline-flex */
+          }</code>
+
+          <li>flex Direction</li>
+          <ul>
+            <li>row (default): left to right in ltr; right to left in rtl</li>
+            <li>row-reverse: right to left in ltr; left to right in rtl</li>
+            <li>column: same as row but top to bottom</li>
+            <li>column-reverse: same as row-reverse but bottom to top</li>  
+          </ul>
+          <code>.container {
+            flex-direction: row | row-reverse | column | column-reverse;
+          }</code>
+
+          <li>flex-wrap</li>
+          <ul>
+            <li>nowrap (default): all flex items will be on one line</li>
+            <li>wrap: flex items will wrap onto multiple lines, from top to bottom.</li>
+            <li>wrap-reverse: flex items will wrap onto multiple lines from bottom to top.</li>
+          </ul>
+          <code>.container {
+            flex-wrap: nowrap | wrap | wrap-reverse;
+          }</code>
+          <li>flex-flow</li>
+          <code>.container {
+            flex-flow: column wrap;
+          }</code>
+
+          <li>justify-content</li>
+          <ul>
+            <li>flex-start (default): items are packed toward the start of the flex-direction.</li>
+            <li>flex-end: items are packed toward the end of the flex-direction.</li>
+            <li>start: items are packed toward the start of the writing-mode direction.</li>
+            <li>end: items are packed toward the end of the writing-mode direction.</li>
+            <li>left: items are packed toward left edge of the container</li>
+            <li>right: items are packed toward right edge of the container</li>
+            <li>center: items are centered along the line</li>
+            <li>space-between: items are evenly distributed in the line</li>
+            <li>space-around: items are evenly distributed in the line with equal space around them</li>
+            <li>space-evenly: items are distributed so that the spacing between any two items (and the space to the edges) is equal</li>
+          </ul>
+          <code>.container {
+            justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+          }</code>
+
+          <li>align-items</li>
+          <ul>
+            <li>stretch (default): stretch to fill the container</li>
+            <li>flex-start / start / self-start: items are placed at the start of the cross axis. </li>
+            <li>flex-end / end / self-end: items are placed at the end of the cross axis</li>
+            <li>center: items are centered in the cross-axis</li>
+            <li>baseline: items are aligned such as their baselines align</li>
+          </ul>
+          <code>.container {
+            align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+          }</code>
+
+          <li>gap, row-gap, column-gap</li>
+          <code>.container {
+            display: flex;
+            ...
+            gap: 10px;
+            gap: 10px 20px; /* row-gap column gap */
+            row-gap: 10px;
+            column-gap: 20px;
+          }</code>
+        </ul>
+          
+      </section>
+      <section class="main-section" id="VSCode Hax">
+        <header>VSCode Hax</header>
+      <p><h3>ngrok</h3></p>
+      <p>steps in performing ngrok: </p>
+      <ol>
+        <li>Make account sa ngrok.com</li>
+        <li>After creating account, click the hamburger menu</li>
+        <li>Under Cloud Edge, click Domains then create domain</li>
+        <li>Back to hamburger menu, under getting started click setup & installation</li>
+        <li>Under agents, click Linux</li>
+        <li>Copy the:
+          curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
+          | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \
+          | sudo tee /etc/apt/sources.list.d/ngrok.list && sudo apt update && sudo apt install ngrok</li>
+        <li>open cmd or powershell</li>
+        <li>type wsl</li>
+        <li>copy and paste again in cmd/powershell what is being copied next:
+          ngrok config add-authtoken authtoken</li>
+        <li>next, go to static domain then copy/paste again:
+          ngrok http --domain=[domain-name].ngrok-free.app 80</li>
+      </ol>
+
+      <p><h3>npx serve</h3></p>
+      <p>steps in performing setting up npx serve</p>
+      <ol>
+        <li>Open github</li>
+        <li>Go to your repository.</li>
+        <li>Click the . on your keyboard.</li>
+        <li>The interface will go to vscode. </li>
+        <li>Open the termina.l</li>
+        <li>Select the “Continue working in github codespace”.</li>
+        <li>Select between “2 cores, 8gb ram,32gb storage” and “2 cores, 16gb ram,32gb storage”.</li>
+        <li>Click the “+” on the upper right corner of terminal tab. Select “bash”</li>
+        <li>Type “ls”. Then enter</li>
+        <li>Type “npx serve”, then enter</li>
+        <li>If this is not your first time entering codespaces on your repo, skip and proceed to the next step. Enter “y”</li>
+        <li>Check the number of localhost. </li>
+        <li>Go to “Port”, next to terminal tab.</li>
+        <li>Check the port number if it’s the same with the localhost in the terminal.</li>
+        <li>If the local host is not the same. Go back to terminal click ctrl+C to stop the port. Then repeat step 9. If the same proceed to next step.</li>
+        <li>Go to port. Toggle the link on the forwarded address then click the 🌐.</li>
+        <li>Go back to terminal click ctrl+C to stop the port.</li>
+      </ol>
+
+    </main>
+</body>
+</html>
